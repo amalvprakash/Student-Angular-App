@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentListComponent } from './student-list/student-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -15,13 +16,18 @@ const myRoute:Routes=[
   {
     path:"list",
     component:StudentListComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
 ] 
 @NgModule({
   declarations: [
     AppComponent,
     StudentEntryComponent,
-    StudentListComponent
+    StudentListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
